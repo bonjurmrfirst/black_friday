@@ -27,3 +27,133 @@ body textarea:focus:required:invalid {
 body input:required:valid,
 body textarea:required:valid {
   color: #666; }
+
+body {
+  font-size: 16px; }
+
+@font-face {
+  font-family: 'OffB';
+  src: url("../assets/fonts/OfficinaSansBlackCITC-Reg.eot");
+  src: url("../assets/fonts/OfficinaSansBlackCITC-Reg.woff2") format("woff2"), url("../assets/fonts/OfficinaSansBlackCITC-Reg.woff") format("woff"), url("../assets/fonts/OfficinaSansBlackCITC-Reg.ttf") format("truetype"), url("../assets/fonts/OfficinaSansBlackCITC-Reg.svg#OfficinaSansBlackCITC-Reg") format("svg"), url("../assets/fonts/OfficinaSansBlackCITC-Reg.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OffR';
+  src: url("../assets/fonts/OfficinaSansBookCITC-Regr.eot");
+  src: url("../assets/fonts/OfficinaSansBookCITC-Regr.woff2") format("woff2"), url("../assets/fonts/OfficinaSansBookCITC-Regr.woff") format("woff"), url("../assets/fonts/OfficinaSansBookCITC-Regr.ttf") format("truetype"), url("../assets/fonts/OfficinaSansBookCITC-Regr.svg#OfficinaSansBookCITC-Reg") format("svg"), url("../assets/fonts/OfficinaSansBookCITC-Regr.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+body {
+  background-color: #ff3700; }
+
+/*.black
+    z-index: 1000
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: black*/
+.ImgGroup {
+  position: relative;
+  height: 400px; }
+  .ImgGroup img {
+    position: absolute; }
+  .ImgGroup .headerShirts {
+    position: absolute;
+    height: 100%;
+    right: 0; }
+  .ImgGroup .headerOrange {
+    position: absolute;
+    bottom: 0; }
+
+h1 {
+  font-family: 'OffB', Arial, Helvetica, sans-serif;
+  font-size: 5.2rem;
+  margin-left: 20px;
+  padding-top: 0;
+  -webkit-transition: 2s;
+  transition: 2s; }
+  h1 span {
+    -webkit-transition: 2s;
+    transition: 2s; }
+  h1 span:hover {
+    -webkit-transition: 2s;
+    transition: 2s;
+    color: white; }
+
+h2 {
+  font-family: 'OffB', Arial, Helvetica, sans-serif;
+  line-height: 30px;
+  font-size: 1.8rem;
+  width: 760px;
+  text-transform: uppercase;
+  margin-top: -15px; }
+
+h3 {
+  font-family: 'OffR', Arial, Helvetica, sans-serif;
+  margin-left: 80px;
+  margin-top: 20px;
+  color: white; }
+
+header .shakhtarLogo {
+  height: 200px;
+  margin-left: 80px;
+  float: left;
+  padding-right: 25px; }
+
+article {
+  font-family: 'OffR', Arial, Helvetica, sans-serif;
+  clear: both;
+  margin-top: 40px;
+  padding-left: 80px;
+  width: 680px; }
+  article p {
+    font-size: 1.2rem;
+    line-height: 22px;
+    padding-top: 10px; }
+  article a {
+    color: black; }
+    article a:hover {
+      color: white;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+
+.bfImage {
+  position: absolute;
+  right: 0;
+  width: 37%;
+  z-index: -100;
+  margin-top: -50px; }
+
+section {
+  margin-top: 20px;
+  padding-left: 80px;
+  font-family: 'OffR', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 30px; }
+  section .space {
+    margin-top: 10px; }
+  section label {
+    margin-top: 10px; }
+    section label p {
+      margin-top: 0; }
+  section input {
+    font-family: 'OffR', Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    padding: 10px;
+    width: 300px; }
+
+@media only screen and (min-width: 1500px) {
+  * {
+    background-color: gray; } }
+
+@media only screen and (max-width: 1200px) {
+  * {
+    background-color: #008800; } }

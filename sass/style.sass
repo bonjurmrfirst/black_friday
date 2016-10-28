@@ -1,2 +1,116 @@
 @import "bourbon"
 @import "parts/default"
+@import "parts/vars"
+
+html, body
+    max-width: 100%
+    overflow-x: hidden
+
+body
+    background-color: $orange
+
+/*.black
+    z-index: 1000
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: black*/
+
+.ImgGroup
+    position: relative
+    height: 400px
+    img
+        position: absolute
+    .headerShirts
+        position: absolute
+        height: 100%
+        right: 0
+    .headerOrange
+        position: absolute
+        bottom: 0
+
+h1
+    font-family: 'OffB', Arial, Helvetica, sans-serif
+    font-size: 5.2rem
+    margin-left: 20px
+    padding-top: 0
+    transition: 2s
+    span
+        transition: 2s
+    span:hover
+        transition: 2s
+        color: white
+
+h2
+    font-family: 'OffB', Arial, Helvetica, sans-serif
+    line-height: 30px
+    font-size: 1.8rem
+    width: 760px
+    text-transform: uppercase
+    margin-top: -15px
+
+h3
+    font-family: 'OffR', Arial, Helvetica, sans-serif
+    margin-left: 80px
+    margin-top: 20px
+    color: white
+
+header
+    .shakhtarLogo
+        height: 200px
+        margin-left: 80px
+        float: left
+        padding-right: 25px
+
+article
+    font-family: 'OffR', Arial, Helvetica, sans-serif
+    clear: both
+    margin-top: 40px
+    padding-left: 80px
+    width: 680px
+    p
+        font-size: 1.2rem
+        line-height: 22px
+        padding-top: 10px
+    a
+        color: black
+        &:hover
+            color: rgba(255,255,255,1)
+            transition: 0.3s
+
+.bfImage
+    position: absolute
+    right: 0
+    width: 37%
+    z-index: -100
+    margin-top: -50px
+
+section
+    margin-top: 20px
+    padding-left: 80px
+    font-family: 'OffR', Arial, Helvetica, sans-serif
+    font-size: 2rem
+    line-height: 30px
+    .space
+        margin-top: 10px
+    label
+        margin-top: 10px
+        p
+            margin-top: 0
+
+    input
+        font-family: 'OffR', Arial, Helvetica, sans-serif
+        font-size: 1.4rem
+        padding: 10px
+        width: 300px
+
+@media only screen and (min-width : 1500px)
+    *
+        background-color: gray
+
+
+@media only screen and (max-width : 1200px)
+    *
+        background-color: #008800
