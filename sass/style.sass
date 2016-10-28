@@ -63,7 +63,6 @@ h2
 
 h3
     font-family: 'OffR', Arial, Helvetica, sans-serif
-
     margin-top: 20px
     color: white
 
@@ -145,10 +144,28 @@ section
     border-top-color: #1b1b1c
     background: #1b1b1c
     text-shadow: none
-.button:hover
-    color: $orange
+/*.button:hover
+    color: $orange*/
 
+#subscribe
+    width: 20px
+    outline: 0
+    font-size: 20px
+    background-color: #aaa
+    color: red
 
+.invalid
+    height: 18px
+
+.invalidPhone, .invalidEmail, .invalidAll
+    display: none
+    color: rgba(0,0,0,0.5)
+    margin: 0
+    padding-top: 20px
+    font-size: 1.4rem
+
+#phoneNumber:disabled
+    background-color: rgba(255,255,255,0.75)
 
 
 @media only screen and (min-width : 1500px)
@@ -208,3 +225,5 @@ section
         line-height: 15px
     h3
         width: 400px
+
+

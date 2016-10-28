@@ -21,7 +21,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('styles', function () {
-  return gulp.src('sass/**/*.sass')
+  return gulp.src('sass/*.sass')
     .pipe(sass({
       includePaths: require('node-bourbon').includePaths
     }).on('error', sass.logError))

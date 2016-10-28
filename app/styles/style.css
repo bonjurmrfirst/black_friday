@@ -185,8 +185,27 @@ section {
   background: #1b1b1c;
   text-shadow: none; }
 
-.button:hover {
-  color: #ff3700; }
+/*.button:hover
+    color: $orange*/
+#subscribe {
+  width: 20px;
+  outline: 0;
+  font-size: 20px;
+  background-color: #aaa;
+  color: red; }
+
+.invalid {
+  height: 18px; }
+
+.invalidPhone, .invalidEmail, .invalidAll {
+  display: none;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding-top: 20px;
+  font-size: 1.4rem; }
+
+#phoneNumber:disabled {
+  background-color: rgba(255, 255, 255, 0.75); }
 
 @media only screen and (min-width: 1500px) {
   .bfImage {

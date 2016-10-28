@@ -25,21 +25,27 @@
         <img class="bfImage" src="assets/img/bf.png">
         <p>Поэтому <strong>самое главное - это быть первым</strong> и не пропустить возможность купить все то, о чем вы давно мечтали и что вы давно запланировали, тем более скидки достигнут колоссальных размеров, а такое бывает только один раз в году.</p>
         <p>Все самые выгодные предложения по суперпривлекательным ценам будут представлены на сайте нашего интернет-магазина <a href="https://shop.shakhtar.com">https://shop.shakhtar.com</a></p>
-        <p><a href="#phoneNumber">Регистрируйся</a> сейчас, <strong>и даты начала Black Friday на shop.shakhtar.com, а также информацию о лучших скидках ты узнаешь ПЕРВЫМ!</strong></p>
+        <p><a href="#email">Регистрируйся</a> сейчас, <strong>и даты начала Black Friday на shop.shakhtar.com, а также информацию о лучших скидках ты узнаешь ПЕРВЫМ!</strong></p>
         <h3>Не упустите свой шанс наслаждаться падением цен вместе с нами!</h3>
     </article>
     <section>
         <label>
             <span>E-mail</span><br>
-            <input type="email" placeholder="email@example.com" tabindex="1" autofocus>
+            <input id="email" type="email" placeholder="email@example.com" tabindex="1" autofocus>
         </label>
         <div class="space"></div>
         <label>
+            <input id="subscribe" type="checkbox">
             <span>Я хочу получить</span><br>
             <span class="second">напоминание по смс:</span><br>
-            <input id="phoneNumber" type="text" placeholder="+380 (__) ___-__-__" tabindex="2">
+            <input id="phoneNumber" type="text" placeholder="+380 (__) ___-__-__" tabindex="2" disabled>
         </label>
         <br>
+        <div class="invalid">
+            <span class="invalidPhone">Номер телефона указан неверно</span>
+            <span class="invalidEmail">Email указан неверно</span>
+            <span class="invalidAll">Хотя бы одно поле должно быть заполнено</span>
+        </div>
         <button class="button">Я УЧАСТВУЮ!</button>
     </section>
     <script src="js/jquery.slim.min.js"></script>
