@@ -2,6 +2,7 @@ const
   gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   sass = require('gulp-sass'),
+  minifycss    = require('gulp-minify-css'),
   autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('default', ['browser-sync', 'watch']);
@@ -27,7 +28,7 @@ gulp.task('styles', function () {
     }).on('error', sass.logError))
     //.pipe(rename({suffix: '.min', prefix : ''}))
     .pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
-    //.pipe(minifycss())
+    .pipe(minifycss())
     .pipe(gulp.dest('app/styles'))
     .pipe(browserSync.stream());
 });
