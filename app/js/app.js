@@ -1,4 +1,8 @@
 ;(function(){
+  document.getElementsByClassName('languages')[0].addEventListener('click', function(e) {
+    e.preventDefault();
+  });
+
   function isEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
@@ -25,9 +29,19 @@
       subscribe = document.getElementById('subscribe'),
       phone = document.getElementById('phoneNumber');
 
+    var self = this;
+    function valid() {
+      email.disabled = true;
+      phone.disabled = true;
+      subscribe.disabled = true;
+      document.getElementsByTagName('section')[0].style.visibility = 'hidden';
+      document.getElementsByClassName('validAll')[0].style.display = 'inline';
+      document.getElementsByClassName('header')[0].classList.add('headerIntoWhite');
+    }
+
     if (!subscribe.checked) {
       if (isEmail(email.value)) {
-        alert('ok')
+        valid();
       } else {
         document.getElementsByClassName('invalidEmail')[0].style.display = 'inline';
         return
@@ -37,7 +51,7 @@
         document.getElementsByClassName('invalidAll')[0].style.display = 'inline';
         return
       }
-      if (!isEmail(email.value)) {
+      if (email.value && !isEmail(email.value)) {
         document.getElementsByClassName('invalidEmail')[0].style.display = 'inline';
         return
       }
@@ -45,7 +59,7 @@
         document.getElementsByClassName('invalidPhone')[0].style.display = 'inline';
         return
       }
-      alert('ok');
+      valid();
     }
   });
 

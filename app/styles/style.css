@@ -52,14 +52,22 @@ body {
   position: relative;
   width: 100%; }
 
-/*.black
-    z-index: 1000
-    position: fixed
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    background-color: black*/
+.languages {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+  .languages a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: 'OffR', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-shadow: 1px 1px 1px white; }
+    .languages a:hover {
+      color: #ff3700; }
+  .languages img {
+    height: 15px; }
+
 .ImgGroup {
   z-index: -1000;
   float: right;
@@ -85,23 +93,18 @@ h1 {
   font-family: 'OffB', Arial, Helvetica, sans-serif;
   font-size: 5.2rem;
   margin-left: 20px;
-  padding-top: 0;
-  -webkit-transition: 2s;
-  transition: 2s; }
-  h1 span {
-    -webkit-transition: 2s;
-    transition: 2s; }
-  h1 span:hover {
-    -webkit-transition: 2s;
-    transition: 2s;
-    color: white; }
+  padding-top: 0; }
+
+.headerIntoWhite {
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s; }
 
 h2 {
   font-family: 'OffB', Arial, Helvetica, sans-serif;
   line-height: 30px;
   font-size: 1.8rem;
   width: 760px;
-  text-transform: uppercase;
   margin-top: -15px; }
 
 h3 {
@@ -109,9 +112,22 @@ h3 {
   margin-top: 20px;
   color: white; }
 
+h4 {
+  font-family: 'OffB', Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-size: 1.2rem;
+  width: 870px;
+  margin-top: 5px; }
+
+strong {
+  color: #f0f0f0; }
+
+h5 {
+  font-family: 'OffB', Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  margin-top: 10px; }
+
 header .shakhtarLogo {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   height: 200px;
   margin-left: 80px;
   float: left;
@@ -130,18 +146,14 @@ article {
   article a {
     color: black; }
     article a:hover {
-      color: white;
-      -webkit-transition: 0.3s;
-      transition: 0.3s; }
+      color: white; }
 
 .bfImage {
   position: absolute;
   right: 0;
-  width: 37%;
+  width: 33%;
   z-index: -100;
-  margin-top: -50px;
-  -webkit-transition: 1s;
-  transition: 1s; }
+  margin-top: -120px; }
 
 section {
   margin-top: 20px;
@@ -167,7 +179,6 @@ section {
   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
   background: -webkit-linear-gradient(top, #000000, #000000);
   background: -o-linear-gradient(top, #000000, #000000);
-  padding: 12px 194px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
   -webkit-box-shadow: black 0 1px 0;
@@ -178,7 +189,9 @@ section {
   font-family: 'OffR', Arial, Helvetica, sans-serif;
   text-decoration: none;
   vertical-align: middle;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 525px;
+  height: 60px; }
 
 .button:active {
   border-top-color: #1b1b1c;
@@ -204,21 +217,30 @@ section {
   padding-top: 20px;
   font-size: 1.4rem; }
 
-#phoneNumber:disabled {
+.validAll {
+  display: none;
+  font-family: 'OffB', Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  padding-left: 80px;
+  color: black; }
+  .validAll a {
+    color: black;
+    padding-left: 80px; }
+    .validAll a:hover {
+      color: white; }
+
+#phoneNumber:disabled, #email:disabled {
   background-color: rgba(255, 255, 255, 0.75); }
 
 @media only screen and (min-width: 1500px) {
   .bfImage {
     padding-right: 200px;
-    margin-top: -100px;
-    -webkit-transition: 1s;
-    transition: 1s; } }
+    margin-top: -100px; } }
 
 @media only screen and (max-width: 1200px) {
   .bfImage {
-    margin-top: 150px;
-    -webkit-transition: 1s;
-    transition: 1s; }
+    margin-top: 250px;
+    width: 24%; }
   .ImgGroup {
     height: 320px; }
   .headerOrange {
@@ -229,14 +251,15 @@ section {
 
 @media only screen and (max-width: 992px) {
   .bfImage {
-    margin: 190px 10px 0 0;
-    width: 25%;
-    -webkit-transition: 1s;
-    transition: 1s; } }
+    width: 25%; }
+  h1 {
+    font-size: 3.7rem; }
+  h4 {
+    width: 740px; } }
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 4.2rem; }
+    font-size: 3.25rem; }
   h2 {
     font-size: 1.6rem;
     width: 500px;
@@ -244,21 +267,35 @@ section {
   header .shakhtarLogo {
     margin-left: 20px; }
   article p {
-    width: 500px; }
+    width: 480px; }
   .bfImage {
-    margin: -150px 0 0 0;
-    width: 20%; } }
+    margin: 5px 0 0 0;
+    width: 15%; }
+  h4 {
+    width: 650px; }
+  aside {
+    width: 480px; } }
 
 @media only screen and (max-width: 640px) {
   .bfImage {
     display: none; }
   h1 {
-    padding-top: 33px;
+    padding-top: 20px;
     font-size: 2.5rem; }
   h2 {
     padding-top: 20px;
-    font-size: 1.0rem;
+    font-size: 1.5rem;
     width: 400px;
     line-height: 15px; }
   h3 {
-    width: 400px; } }
+    width: 300px; }
+  h4 {
+    font-size: 1.0rem;
+    width: 550px; }
+  aside {
+    width: 380px; }
+  article p {
+    width: 380px; }
+  header .shakhtarLogo {
+    margin-left: 5px;
+    height: 200px; } }

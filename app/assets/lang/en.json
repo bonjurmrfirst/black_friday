@@ -1,0 +1,16 @@
+{
+  "header" : "COMING SOON!",
+  "leadData": "25-27 NOVEMBER",
+  "lead": "Do not miss the <strong>mega sale</strong> at the FC Shakhtar online shop. This is the only time of year, when the <strong>discounts</strong> on the items get <strong>enormously big</strong>.",
+  "subHeader1": "BE THE FIRST!",
+  "text1": "The most attractive price offers will be available at <a href='http://shop.shakhtar.com'>shop.shakhtar.com</a>. Register right now and be the first to receive the information about the Black Friday 2016.",
+  "subHeader2": "ONLY THREE DAYS!",
+  "text2": "The first 100 registered participants will receive a gift cup from FC Shakhtar!*",
+  "addText": "* If they purchase UAH 500 worth of items at the online store during November 25-27",
+  "subscribeSMS": "I would like to receive <br>a reminder via SMS:",
+  "button": "I AM PARTICIPATING!",
+  "invalidPhone": "The phone number you entered is not valid. Re-enter it, please.",
+  "invalidEmail": "The email address you entered is not valid. Re-enter it, please.",
+  "invalidNoField": "At least one field must be filled out.",
+  "valid": "You are registered!<br><a href='http://shakhtar.com'>Go back to the main page.</a>"
+}

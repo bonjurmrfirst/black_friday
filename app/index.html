@@ -8,6 +8,21 @@
 </head>
 <body>
     <div class="black"></div>
+    <div class="languages">
+        <a href="" onclick="switchLang('ua')">
+            <img src="assets/img/ua.jpg" alt="Українська">
+            Українська
+
+        </a>
+        <a href="" onclick="switchLang('ru')">
+            <img src="assets/img/ru.jpg" alt="Русский">
+            Русский
+        </a>
+        <a href="" onclick="switchLang('en')">
+            <img src="assets/img/en.jpg" alt="English">
+            English
+        </a>
+    </div>
     <div class="ImgGroup">
         <img class="headerShirts" src="assets/img/shirts.jpg" alt="background">
     </div>
@@ -18,16 +33,22 @@
         <a href="http://shakhtar.com">
             <img class="shakhtarLogo" src="assets/img/logo.png" alt="Shakhtar Logo">
         </a>
-        <h1><span>УЖЕ СКОРО!</span></h1>
-        <h2>В интернет-магазине FC Shakhtar состоится мегараспродажа Black Friday 2016!</h2>
+        <h1><span class="header" tkey="header"></span></h1>
+        <h2 tkey="leadData"></h2>
+        <h4 tkey="lead"></h4>
     </header>
     <article>
         <img class="bfImage" src="assets/img/bf.png">
-        <p>Поэтому <strong>самое главное - это быть первым</strong> и не пропустить возможность купить все то, о чем вы давно мечтали и что вы давно запланировали, тем более скидки достигнут колоссальных размеров, а такое бывает только один раз в году.</p>
-        <p>Все самые выгодные предложения по суперпривлекательным ценам будут представлены на сайте нашего интернет-магазина <a href="https://shop.shakhtar.com">https://shop.shakhtar.com</a></p>
-        <p><a href="#email">Регистрируйся</a> сейчас, <strong>и даты начала Black Friday на shop.shakhtar.com, а также информацию о лучших скидках ты узнаешь ПЕРВЫМ!</strong></p>
-        <h3>Не упустите свой шанс наслаждаться падением цен вместе с нами!</h3>
+        <h5 tkey="subHeader1"></h5>
+        <p tkey="text1"></p>
+        <h5 tkey="subHeader2"></h5>
+        <p tkey="text2"></p>
+        <aside tkey="addText"></aside>
     </article>
+    <span class="validAll" tkey="valid">Вы зарегистрированы!
+        <br>
+        <a href="http://shakhtar.com">Веруться на главную</a>
+    </span>
     <section>
         <label>
             <span>E-mail</span><br>
@@ -36,20 +57,21 @@
         <div class="space"></div>
         <label>
             <input id="subscribe" type="checkbox">
-            <span>Я хочу получить</span><br>
-            <span class="second">напоминание по смс:</span><br>
+            <span tkey="subscribeSMS"></span><br>
             <input id="phoneNumber" type="text" placeholder="+380 (__) ___-__-__" tabindex="2" disabled>
         </label>
         <br>
         <div class="invalid">
-            <span class="invalidPhone">Номер телефона указан неверно</span>
-            <span class="invalidEmail">Email указан неверно</span>
-            <span class="invalidAll">Хотя бы одно поле должно быть заполнено</span>
+            <span class="invalidPhone" tkey="invalidPhone"></span>
+            <span class="invalidEmail" tkey="invalidEmail"></span>
+            <span class="invalidAll" tkey="invalidNoField"></span>
+            <!--span class="validAll"><a href="http://shakhtar.com">Веруться на главную</a></span-->
         </div>
-        <button class="button">Я УЧАСТВУЮ!</button>
+        <button class="button" tkey="button"></button>
     </section>
-    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/maskedinput.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/lang.js"></script>
 </body>
 </html>
