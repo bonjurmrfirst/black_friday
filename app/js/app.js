@@ -31,6 +31,11 @@
 
     var self = this;
     function valid() {
+      $.post(
+        //"http://shakhtar.com/ru/dreamteam/add/",
+        {"phone": phone.value, "value": email.value}
+      );
+
       email.disabled = true;
       phone.disabled = true;
       subscribe.disabled = true;

@@ -3,7 +3,8 @@ const
   browserSync = require('browser-sync').create(),
   sass = require('gulp-sass'),
   minifycss    = require('gulp-minify-css'),
-  autoprefixer = require('gulp-autoprefixer');
+  autoprefixer = require('gulp-autoprefixer'),
+  cssbeautify = require('gulp-cssbeautify');
 
 gulp.task('default', ['browser-sync', 'watch']);
 
@@ -27,8 +28,14 @@ gulp.task('styles', function () {
       includePaths: require('node-bourbon').includePaths
     }).on('error', sass.logError))
     //.pipe(rename({suffix: '.min', prefix : ''}))
-    .pipe(autoprefixer({browsers: ['last 15 versions'], cascade: false}))
-    .pipe(minifycss())
+    .pipe(autoprefixer({browsers: ['last 15 versions'], cascade: true}))
+    //.pipe(minifycss())
     .pipe(gulp.dest('app/styles'))
     .pipe(browserSync.stream());
+});
+
+gulp.task('beautify', function() {
+    return gulp.src('./app/styles/style.css')
+      .pipe(cssbeautify())
+      .pipe(gulp.dest('./'));
 });

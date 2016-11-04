@@ -1,302 +1,390 @@
+h4,section {
+    line-height: 20px
+}
+
+.button,.languages a {
+    text-decoration: none
+}
+
 * {
-  padding: 0;
-  margin: 0; }
+    padding: 0;
+    margin: 0
+}
 
-*::-webkit-input-placeholder {
-  color: #666;
-  opacity: 1; }
+::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1
+}
 
-*:-moz-placeholder {
-  color: #666;
-  opacity: 1; }
+:-moz-placeholder {
+    color: #666;
+    opacity: 1
+}
 
-*::-moz-placeholder {
-  color: #666;
-  opacity: 1; }
+::-moz-placeholder {
+    color: #666;
+    opacity: 1
+}
 
-*:-ms-input-placeholder {
-  color: #666;
-  opacity: 1; }
+:-ms-input-placeholder {
+    color: #666;
+    opacity: 1
+}
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: #666; }
-
-body input:required:valid,
-body textarea:required:valid {
-  color: #666; }
-
-body {
-  font-size: 16px; }
-
-@font-face {
-  font-family: 'OffB';
-  src: url("../assets/fonts/OfficinaSansBlackCITC-Reg.eot");
-  src: url("../assets/fonts/OfficinaSansBlackCITC-Reg.woff2") format("woff2"), url("../assets/fonts/OfficinaSansBlackCITC-Reg.woff") format("woff"), url("../assets/fonts/OfficinaSansBlackCITC-Reg.ttf") format("truetype"), url("../assets/fonts/OfficinaSansBlackCITC-Reg.svg#OfficinaSansBlackCITC-Reg") format("svg"), url("../assets/fonts/OfficinaSansBlackCITC-Reg.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'OffR';
-  src: url("../assets/fonts/OfficinaSansBookCITC-Regr.eot");
-  src: url("../assets/fonts/OfficinaSansBookCITC-Regr.woff2") format("woff2"), url("../assets/fonts/OfficinaSansBookCITC-Regr.woff") format("woff"), url("../assets/fonts/OfficinaSansBookCITC-Regr.ttf") format("truetype"), url("../assets/fonts/OfficinaSansBookCITC-Regr.svg#OfficinaSansBookCITC-Reg") format("svg"), url("../assets/fonts/OfficinaSansBookCITC-Regr.eot?#iefix") format("embedded-opentype");
-  font-weight: normal;
-  font-style: normal; }
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden; }
+body input:focus:required:invalid,body input:required:valid,body textarea:focus:required:invalid,body textarea:required:valid {
+    color: #666
+}
 
 body {
-  background-color: #ff3700;
-  position: relative;
-  width: 100%; }
+    font-size: 16px;
+    background-color: #ff3700;
+    position: relative;
+    width: 100%
+}
+
+@font-face {
+    font-family:OffB;src:url(../assets/fonts/OfficinaSansBlackCITC-Reg.eot);src:url(../assets/fonts/OfficinaSansBlackCITC-Reg.woff2) format("woff2"),url(../assets/fonts/OfficinaSansBlackCITC-Reg.woff) format("woff"),url(../assets/fonts/OfficinaSansBlackCITC-Reg.ttf) format("truetype"),url(../assets/fonts/OfficinaSansBlackCITC-Reg.svg#OfficinaSansBlackCITC-Reg) format("svg"),url(../assets/fonts/OfficinaSansBlackCITC-Reg.eot?#iefix) format("embedded-opentype");font-weight:400;font-style:normal
+}
+
+@font-face {
+    font-family:OffR;src:url(../assets/fonts/OfficinaSansBookCITC-Regr.eot);src:url(../assets/fonts/OfficinaSansBookCITC-Regr.woff2) format("woff2"),url(../assets/fonts/OfficinaSansBookCITC-Regr.woff) format("woff"),url(../assets/fonts/OfficinaSansBookCITC-Regr.ttf) format("truetype"),url(../assets/fonts/OfficinaSansBookCITC-Regr.svg#OfficinaSansBookCITC-Reg) format("svg"),url(../assets/fonts/OfficinaSansBookCITC-Regr.eot?#iefix) format("embedded-opentype");font-weight:400;font-style:normal
+}
+
+body,html {
+    max-width: 100%;
+    overflow-x: hidden
+}
 
 .languages {
-  position: absolute;
-  right: 10px;
-  top: 10px; }
-  .languages a {
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+.languages a {
     padding-left: 10px;
-    text-decoration: none;
-    color: black;
-    font-family: 'OffR', Arial, Helvetica, sans-serif;
+    color: #000;
+    font-family: OffR,Arial,Helvetica,sans-serif;
     font-size: 1rem;
-    text-shadow: 1px 1px 1px white; }
-    .languages a:hover {
-      color: #ff3700; }
-  .languages img {
-    height: 15px; }
+    text-shadow: 1px 1px 1px #fff
+}
+
+article,section {
+    padding-left: 80px
+}
+
+h1,h2 {
+    font-family: OffB,Arial,Helvetica,sans-serif
+}
+
+.languages a:hover {
+    color: #ff3700
+}
+
+.languages img {
+    height: 15px
+}
 
 .ImgGroup {
-  z-index: -1000;
-  float: right;
-  position: relative;
-  height: 400px; }
-  .ImgGroup img {
-    position: absolute; }
-  .ImgGroup .headerShirts {
+    z-index: -1000;
+    float: right;
+    position: relative;
+    height: 400px
+}
+
+.ImgGroup img,.bfImage,.headerOrange {
+    position: absolute
+}
+
+.ImgGroup .headerShirts {
     height: 100%;
     right: 0;
     z-index: -1000;
-    background-color: #ff3700; }
+    background-color: #ff3700
+}
 
 .spaceHeader {
-  height: 350px; }
+    height: 350px
+}
 
 .headerOrange {
-  position: absolute;
-  z-index: 1000;
-  margin-top: 230px; }
+    z-index: 1000;
+    margin-top: 230px
+}
 
 h1 {
-  font-family: 'OffB', Arial, Helvetica, sans-serif;
-  font-size: 5.2rem;
-  margin-left: 20px;
-  padding-top: 0; }
+    font-size: 5.2rem;
+    margin-left: 20px;
+    padding-top: 0
+}
 
 .headerIntoWhite {
-  color: white;
-  -webkit-transition: 1s;
-  transition: 1s; }
+    color: #fff;
+    -webkit-transition: 1s;
+    transition: 1s
+}
 
 h2 {
-  font-family: 'OffB', Arial, Helvetica, sans-serif;
-  line-height: 30px;
-  font-size: 1.8rem;
-  width: 760px;
-  margin-top: -15px; }
+    line-height: 30px;
+    font-size: 1.8rem;
+    width: 760px;
+    margin-top: -15px
+}
 
 h3 {
-  font-family: 'OffR', Arial, Helvetica, sans-serif;
-  margin-top: 20px;
-  color: white; }
+    font-family: OffR,Arial,Helvetica,sans-serif;
+    margin-top: 20px;
+    color: #fff
+}
+
+h4,h5 {
+    font-family: OffB,Arial,Helvetica,sans-serif
+}
 
 h4 {
-  font-family: 'OffB', Arial, Helvetica, sans-serif;
-  line-height: 20px;
-  font-size: 1.2rem;
-  width: 870px;
-  margin-top: 5px; }
+    font-size: 1.2rem;
+    width: 870px;
+    margin-top: 5px
+}
 
 strong {
-  color: #f0f0f0; }
+    color: #f0f0f0
+}
 
 h5 {
-  font-family: 'OffB', Arial, Helvetica, sans-serif;
-  font-size: 1.8rem;
-  margin-top: 10px; }
+    font-size: 1.8rem;
+    margin-top: 10px
+}
+
+.button,article,section,section input {
+    font-family: OffR,Arial,Helvetica,sans-serif
+}
 
 header .shakhtarLogo {
-  height: 200px;
-  margin-left: 80px;
-  float: left;
-  padding-right: 25px; }
+    height: 200px;
+    margin-left: 80px;
+    float: left;
+    padding-right: 25px
+}
 
 article {
-  font-family: 'OffR', Arial, Helvetica, sans-serif;
-  clear: both;
-  margin-top: 40px;
-  padding-left: 80px;
-  width: 680px; }
-  article p {
+    clear: both;
+    margin-top: 40px;
+    width: 680px
+}
+
+article p {
     font-size: 1.2rem;
     line-height: 22px;
-    padding-top: 10px; }
-  article a {
-    color: black; }
-    article a:hover {
-      color: white; }
+    padding-top: 10px
+}
+
+article a {
+    color: #000
+}
+
+.button,article a:hover {
+    color: #fff
+}
 
 .bfImage {
-  position: absolute;
-  right: 0;
-  width: 33%;
-  z-index: -100;
-  margin-top: -120px; }
+    right: 0;
+    width: 33%;
+    z-index: -100;
+    margin-top: -120px
+}
 
 section {
-  margin-top: 20px;
-  padding-left: 80px;
-  font-family: 'OffR', Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  line-height: 30px; }
-  section .space {
-    margin-top: 10px; }
-  section label {
-    margin-top: 10px; }
-    section label p {
-      margin-top: 0; }
-  section input {
-    font-family: 'OffR', Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-size: 1.5rem
+}
+
+section .space,section label {
+    margin-top: 10px
+}
+
+section label p {
+    margin-top: 0
+}
+
+section input {
     font-size: 1.4rem;
     padding: 10px;
-    width: 500px; }
+    width: 500px
+}
 
 .button {
-  margin: 20px 0 20px 0;
-  background: #000000;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
-  background: -webkit-linear-gradient(top, #000000, #000000);
-  background: -o-linear-gradient(top, #000000, #000000);
-  -webkit-border-radius: 0px;
-  border-radius: 0px;
-  -webkit-box-shadow: black 0 1px 0;
-  box-shadow: black 0 1px 0;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
-  color: white;
-  font-size: 1.5rem;
-  font-family: 'OffR', Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  width: 525px;
-  height: 60px; }
+    margin: 20px 0;
+    background: #000;
+    background: -webkit-gradient(linear,left top,left bottom,from(#000),to(#000));
+    background: -webkit-linear-gradient(top,#000,#000);
+    background: -o-linear-gradient(top,#000,#000);
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: #000 0 1px 0;
+    box-shadow: #000 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 525px;
+    height: 60px
+}
 
 .button:active {
-  border-top-color: #1b1b1c;
-  background: #1b1b1c;
-  text-shadow: none; }
+    border-top-color: #1b1b1c;
+    background: #1b1b1c;
+    text-shadow: none
+}
 
-/*.button:hover
-    color: $orange*/
 #subscribe {
-  width: 20px;
-  outline: 0;
-  font-size: 20px;
-  background-color: #aaa;
-  color: red; }
+    width: 20px;
+    outline: 0;
+    font-size: 20px;
+    background-color: #aaa;
+    color: red
+}
 
 .invalid {
-  height: 14px; }
+    height: 14px
+}
 
-.invalidPhone, .invalidEmail, .invalidAll {
-  display: none;
-  color: rgba(0, 0, 0, 0.5);
-  margin: 0;
-  padding-top: 20px;
-  font-size: 1.2rem; }
+.invalidAll,.invalidEmail,.invalidPhone {
+    display: none;
+    color: rgba(0,0,0,.5);
+    margin: 0;
+    padding-top: 20px;
+    font-size: 1.2rem
+}
+
+.validAll,.validAll a {
+    color: #000;
+    padding-left: 80px
+}
 
 .validAll {
-  display: none;
-  font-family: 'OffB', Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  padding-left: 80px;
-  color: black; }
-  .validAll a {
-    color: black;
-    padding-left: 80px; }
-    .validAll a:hover {
-      color: white; }
+    display: none;
+    font-family: OffB,Arial,Helvetica,sans-serif;
+    font-size: 1.5rem
+}
 
-#phoneNumber:disabled, #email:disabled {
-  background-color: rgba(255, 255, 255, 0.75); }
+.validAll a:hover {
+    color: #fff
+}
 
-@media only screen and (min-width: 1500px) {
-  .bfImage {
-    padding-right: 200px;
-    margin-top: -100px; } }
+#email:disabled,#phoneNumber:disabled {
+    background-color: rgba(255,255,255,.75)
+}
 
-@media only screen and (max-width: 1200px) {
-  .bfImage {
-    margin-top: 200px;
-    width: 30%; }
-  .ImgGroup {
-    height: 320px; }
-  .headerOrange {
-    position: absolute;
-    margin-top: 150px; }
-  .spaceHeader {
-    height: 280px; } }
+@media only screen and (min-width:1500px) {
+    .bfImage {
+        padding-right: 200px;
+        margin-top: -100px
+    }
+}
 
-@media only screen and (max-width: 992px) {
-  .bfImage {
-    width: 25%;
-    margin-top: 250px; }
-  h1 {
-    font-size: 3.7rem; }
-  h4 {
-    width: 740px; } }
+@media only screen and (max-width:1200px) {
+    .bfImage {
+        margin-top: 180px;
+        width: 30%
+    }
 
-@media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 3.25rem; }
-  h2 {
-    font-size: 1.6rem;
-    width: 500px;
-    line-height: 27px; }
-  header .shakhtarLogo {
-    margin-left: 20px; }
-  article p {
-    width: 480px; }
-  .bfImage {
-    margin: -50px 0 0 0;
-    width: 15%; }
-  h4 {
-    width: 650px; }
-  aside {
-    width: 480px; } }
+    .ImgGroup {
+        height: 320px
+    }
 
-@media only screen and (max-width: 640px) {
-  .bfImage {
-    display: none; }
-  h1 {
-    padding-top: 20px;
-    font-size: 2.5rem; }
-  h2 {
-    padding-top: 20px;
-    font-size: 1.5rem;
-    width: 400px;
-    line-height: 15px; }
-  h3 {
-    width: 300px; }
-  h4 {
-    font-size: 1.0rem;
-    width: 550px; }
-  aside {
-    width: 380px; }
-  article p {
-    width: 380px; }
-  header .shakhtarLogo {
-    margin-left: 5px;
-    height: 200px; } }
+    .headerOrange {
+        position: absolute;
+        margin-top: 150px
+    }
+
+    .spaceHeader {
+        height: 280px
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .bfImage {
+        width: 25%;
+        margin-top: 250px
+    }
+
+    h1 {
+        font-size: 3.7rem
+    }
+
+    h4 {
+        width: 740px
+    }
+}
+
+@media only screen and (max-width:768px) {
+    h1 {
+        font-size: 3.25rem
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        width: 500px;
+        line-height: 27px
+    }
+
+    header .shakhtarLogo {
+        margin-left: 20px
+    }
+
+    article p {
+        width: 480px
+    }
+
+    .bfImage {
+        margin: -50px 0 0;
+        width: 15%
+    }
+
+    h4 {
+        width: 650px
+    }
+
+    aside {
+        width: 480px
+    }
+}
+
+@media only screen and (max-width:640px) {
+    h1,h2 {
+        padding-top: 20px
+    }
+
+    .bfImage {
+        display: none
+    }
+
+    h1 {
+        font-size: 2.5rem
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        width: 400px;
+        line-height: 15px
+    }
+
+    h3 {
+        width: 300px
+    }
+
+    h4 {
+        font-size: 1rem;
+        width: 550px
+    }
+
+    article p,aside {
+        width: 380px
+    }
+
+    header .shakhtarLogo {
+        margin-left: 5px;
+        height: 200px
+    }
+}

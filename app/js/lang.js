@@ -12,13 +12,8 @@ var translate = function (jsdata)
   });
 };
 
-
-langCode = 'ru';//navigator.language.substr (0, 2);
-
-if (langs.indexOf(langCode) + 1)
-  $.getJSON('assets/lang/' + langCode + '.json', translate);
-else
-  $.getJSON('assets/lang/' + 'ru.json', translate);
+langCode = 'ru';
+$.getJSON('assets/lang/' + langCode + '.json', translate);
 
 function switchLang(setLang) {
   if (langs.indexOf(setLang) + 1)
